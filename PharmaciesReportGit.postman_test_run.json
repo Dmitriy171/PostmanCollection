@@ -1,0 +1,2375 @@
+{
+	"id": "5674d921-d1f0-40cc-a24f-fa88cbdfee51",
+	"name": "PharmaciesReportGit",
+	"timestamp": "2020-12-08T20:10:15.619Z",
+	"collection_id": "046bf297-bfa4-473c-becd-31c5dbf998aa",
+	"folder_id": 0,
+	"environment_id": "047c9d85-b19b-419f-9376-bdd59bf85a89",
+	"totalPass": 112,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "d691348f-bddd-470c-9105-9b00e121b822",
+			"name": "User login super-admin",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/user/login",
+			"time": 1317,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1317
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "41ec0380-3e6d-41db-8754-275303691bee",
+			"name": "Creating Pharmacy.",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/user/pharmacy",
+			"time": 555,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"isEnabled=true": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"isEnabled=true": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				555
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"isEnabled=true": true
+				}
+			]
+		},
+		{
+			"id": "d09fdf84-07db-4cc5-8bc1-2549cff1ea9f",
+			"name": "Retrieving Pharmacy data.",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/user/pharmacy/84",
+			"time": 520,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"isEnabled=true": true,
+				"regionId=6": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"isEnabled=true": {
+					"pass": 1,
+					"fail": 0
+				},
+				"regionId=6": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				520
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"isEnabled=true": true,
+					"regionId=6": true
+				}
+			]
+		},
+		{
+			"id": "c8baac3d-d3a4-4f0f-b7d8-c22be99a4709",
+			"name": "Uploading_User_image_file.",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/user/image",
+			"time": 719,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				719
+			],
+			"allTests": [
+				{
+					"Status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "d50f4873-2d0c-4041-9ecf-486ddabdb7f8",
+			"name": "Editing Pharmacy.",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/user/pharmacy/84",
+			"time": 565,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				565
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "1efd3580-c676-4c68-afe0-4ee19ee0f072",
+			"name": "Retrieving Pharmacy data. Сhange",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/user/pharmacy/84",
+			"time": 523,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"regionId=4": true,
+				"isEnabled=true": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"regionId=4": {
+					"pass": 1,
+					"fail": 0
+				},
+				"isEnabled=true": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				523
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"regionId=4": true,
+					"isEnabled=true": true
+				}
+			]
+		},
+		{
+			"id": "bbbd5e2c-f301-4b33-af44-f5f9287420fa",
+			"name": "Retrieving collection of Pharmacy",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/user/pharmacies",
+			"time": 651,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Compare pharma_id": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Compare pharma_id": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				651
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Compare pharma_id": true
+				}
+			]
+		},
+		{
+			"id": "dee8b7d8-355e-4618-8d3e-abaae5ee6ca7",
+			"name": "User registration. EnterpriseAdmin",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/user/registration/type/enterprise_manager",
+			"time": 1194,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				1194
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "cfb4b468-c78f-4aa3-a793-9ac9be2b4079",
+			"name": "Add User to Pharmacy.",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/user/pharmacy/84/add-user/Solon_King@yahoo.com",
+			"time": 495,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				495
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "99500f07-c9c0-4d8b-b776-588b54d219ed",
+			"name": "Retrieving Pharmacy users.",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/user/pharmacy/84/users",
+			"time": 539,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Compare EnterpriseAdmin_id ": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Compare EnterpriseAdmin_id ": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				539
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Compare EnterpriseAdmin_id ": true
+				}
+			]
+		},
+		{
+			"id": "564e053d-cf53-425a-ae27-ee14e9f25280",
+			"name": "Remove User from Pharmacy.",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/user/pharmacy/84/remove-user/Solon_King@yahoo.com",
+			"time": 529,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				529
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "4c5544df-bf1b-4645-9830-d0d078fb8005",
+			"name": "Retrieving Pharmacy users. List empty",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/user/pharmacy/84/users",
+			"time": 558,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Сart is empty": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Сart is empty": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				558
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Сart is empty": true
+				}
+			]
+		},
+		{
+			"id": "77d95d9a-934b-47b8-8919-399dd0a2cf09",
+			"name": "Creating Pharmacy product. Required fields Copy",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/user/pharmacy/84/pharmacy-product",
+			"time": 626,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				626
+			],
+			"allTests": [
+				{
+					"Status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "80d7b688-2cb4-4bd4-942a-0d81fc7c8875",
+			"name": "Retrieving Pharmacy products.",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/user/pharmacy/84/products",
+			"time": 563,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Compare global-product_id": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Compare global-product_id": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				563
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Compare global-product_id": true
+				}
+			]
+		},
+		{
+			"id": "a0f4549b-8d2b-49ff-9f11-2ae9f983153f",
+			"name": "Close Pharmacy.",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/user/pharmacy/84/close",
+			"time": 506,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				506
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "6a13428e-cf37-421c-aff0-6b059b5407f6",
+			"name": "Retrieving Pharmacy data. isEnabled=false",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/user/pharmacy/84",
+			"time": 521,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"isEnabled=false": true,
+				"regionId=4": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"isEnabled=false": {
+					"pass": 1,
+					"fail": 0
+				},
+				"regionId=4": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				521
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"isEnabled=false": true,
+					"regionId=4": true
+				}
+			]
+		},
+		{
+			"id": "8f63a51c-5667-447d-a0fe-438cba8dea3a",
+			"name": "Open Pharmacy.",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/user/pharmacy/84/open",
+			"time": 540,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				540
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "8e514e7b-f910-4cd2-bf85-3212dc4a9d4e",
+			"name": "Retrieving Pharmacy data. isEnabled=true",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/user/pharmacy/84",
+			"time": 519,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"isEnabled=true": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"isEnabled=true": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				519
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"isEnabled=true": true
+				}
+			]
+		},
+		{
+			"id": "ef825fd3-d35d-4d84-a498-b7ba48f5ad34",
+			"name": "Retrieving Pharmacy products.",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/user/pharmacy/84/products",
+			"time": 562,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				562
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "152690d0-810d-432a-ab6d-c5ac7bc0cf2a",
+			"name": "User login super-admin",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/user/login",
+			"time": 1207,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1207
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "2d52ecc1-ab6d-4b15-8da3-77e57627134f",
+			"name": "User registration. Pharmacist",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/user/registration/type/pharmacist",
+			"time": 1200,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1200
+			],
+			"allTests": [
+				{
+					"Status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "a32b5242-a252-4c9c-a724-b79b6ff4b255",
+			"name": "User login Pharmacist",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/user/login",
+			"time": 1159,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1159
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "02d041c3-ebe0-4f0e-bc30-6f4d3060c231",
+			"name": "Uploading_User_image_file.",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/user/image",
+			"time": 803,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				803
+			],
+			"allTests": [
+				{
+					"Status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "87e912a7-c612-4911-9cdd-cb764e514757",
+			"name": "Updating User data.Pharmacist",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/user/user/63475a8f-3b92-4140-84ca-63a6b62aa765",
+			"time": 1409,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1409
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "8b935fe4-7f28-4502-930f-4e83d65c2c0d",
+			"name": "User login Pharmacist Copy",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/user/login",
+			"time": 1165,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1165
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "ec98f00e-41ae-4842-a81f-ba777108b9ac",
+			"name": "self User",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/user/user",
+			"time": 504,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Compare avatar": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Compare avatar": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				504
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Compare avatar": true
+				}
+			]
+		},
+		{
+			"id": "ee684448-12db-47c2-9856-7f7ede71dbf3",
+			"name": "Retrieving User data by uuid.",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/user/user/63475a8f-3b92-4140-84ca-63a6b62aa765",
+			"time": 523,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Compare avatar": true,
+				"Compare email": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Compare avatar": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Compare email": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				523
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Compare avatar": true,
+					"Compare email": true
+				}
+			]
+		},
+		{
+			"id": "0f0609ea-cbbb-4908-a4ac-42d2b0520fcc",
+			"name": "User login super-admin",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/user/login",
+			"time": 1202,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1202
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "04654b68-7357-49c7-a004-ade8cfa4032b",
+			"name": "User registration. Doctor",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/user/registration/type/doctor",
+			"time": 1189,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1189
+			],
+			"allTests": [
+				{
+					"Status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "761b93db-896a-4049-a53d-9d00b1b03990",
+			"name": "User login Doctor",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/user/login",
+			"time": 1148,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1148
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "8b5b7425-632d-439d-af1c-3fb3c4c7dcb1",
+			"name": "Uploading_User_image_file.",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/user/image",
+			"time": 507,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				507
+			],
+			"allTests": [
+				{
+					"Status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "f1e9c808-b8c4-4c67-bf76-b8da1014e05d",
+			"name": "Updating User data.Doctor",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/user/user/b7fd436b-e405-4f8a-baae-26d280fc7186",
+			"time": 1228,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1228
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "c76cafcb-b010-4c93-b5f5-a3baa2eeda9d",
+			"name": "User login Doctor Copy",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/user/login",
+			"time": 1179,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1179
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "0871138b-56c3-4861-8508-935516ce84a6",
+			"name": "self User",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/user/user",
+			"time": 507,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Compare avatar": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Compare avatar": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				507
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Compare avatar": true
+				}
+			]
+		},
+		{
+			"id": "8e0f6f6c-17e6-49b6-a2e9-375cb715f24f",
+			"name": "Retrieving User data by uuid.",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/user/user/b7fd436b-e405-4f8a-baae-26d280fc7186",
+			"time": 502,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Compare avatar": true,
+				"Compare email": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Compare avatar": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Compare email": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				502
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Compare avatar": true,
+					"Compare email": true
+				}
+			]
+		},
+		{
+			"id": "b9535d5c-6a89-43f2-a8d5-83107117dad7",
+			"name": "Retrieving collection of Pharmacist data.",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/user/pharmacists",
+			"time": 587,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Compare pharmacist_email": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Compare pharmacist_email": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				587
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Compare pharmacist_email": true
+				}
+			]
+		},
+		{
+			"id": "73fcc7ac-caca-49e6-b74d-695cc3d7e3d1",
+			"name": "Retrieving collection of Doctor data.",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/user/doctors",
+			"time": 549,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Compare doctor_email": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Compare doctor_email": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				549
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Compare doctor_email": true
+				}
+			]
+		},
+		{
+			"id": "8a23181d-9378-4eee-95c2-994c25334c23",
+			"name": "Customer registration.",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/customer/registration",
+			"time": 1162,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1162
+			],
+			"allTests": [
+				{
+					"Status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "96eb9106-3201-4bbf-9769-b55664494af8",
+			"name": "Retrieving collection of Customer data as user.",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/user/customers",
+			"time": 589,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Compare customer_id": true,
+				"Compare customer_name": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Compare customer_id": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Compare customer_name": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				589
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Compare customer_id": true,
+					"Compare customer_name": true
+				}
+			]
+		},
+		{
+			"id": "2684050a-c9e3-466a-8673-200bc18102f5",
+			"name": "Creating Global product. Full",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/user/global-product",
+			"time": 613,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				613
+			],
+			"allTests": [
+				{
+					"Status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "aac54637-f5a4-4222-8827-b3e4b9450129",
+			"name": "Retrieving collection of Global products.",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/user/global-products",
+			"time": 11575,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Compare Global product_id": true,
+				"Compare Global product_name": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Compare Global product_id": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Compare Global product_name": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				11575
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Compare Global product_id": true,
+					"Compare Global product_name": true
+				}
+			]
+		},
+		{
+			"id": "0e04b819-6eb7-4a90-a3f6-17f5fe8a16f6",
+			"name": "Retrieving products search data.",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/public/products/search?name=%D0%A6%D0%B8%D1%82%D1%80%D0%B0%D1%82%20%D0%BA%D0%B0%D0%BB%D0%B8%D1%8F",
+			"time": 1363,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Compare Global product_id": true,
+				"Compare Global product_name": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Compare Global product_id": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Compare Global product_name": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1363
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Compare Global product_id": true,
+					"Compare Global product_name": true
+				}
+			]
+		},
+		{
+			"id": "4d87acc7-2108-47bd-a80c-cc744bb84ab9",
+			"name": "User registration. Admin",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/user/registration/type/admin",
+			"time": 1219,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Created admin": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Created admin": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1219
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Created admin": true
+				}
+			]
+		},
+		{
+			"id": "0596b131-1f58-4e3a-8a94-8175735655b3",
+			"name": "Retrieving collection of Admin data.",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/user/admins",
+			"time": 525,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Compare Admin_id": true,
+				"Compare Global Admin_email": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Compare Admin_id": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Compare Global Admin_email": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				525
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Compare Admin_id": true,
+					"Compare Global Admin_email": true
+				}
+			]
+		},
+		{
+			"id": "b4b8d1ec-73d8-4a67-9f0d-83b4a553a356",
+			"name": "User registration enterprise_admin",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/user/registration/type/enterprise_admin",
+			"time": 1182,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Created type-enterprise_admin": true,
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Created type-enterprise_admin": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1182
+			],
+			"allTests": [
+				{
+					"Created type-enterprise_admin": true,
+					"Status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "5eb22feb-9c4e-4cdf-a25a-4ef2cf209aa2",
+			"name": "Add User to Pharmacy.",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/user/pharmacy/3/add-user/Gregorio.Dare@gmail.com",
+			"time": 530,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				530
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "62a55595-2c63-4432-9d5b-2b274881f062",
+			"name": "Retrieving collection of EnterpriseAdmin data.",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/user/enterprise-admins",
+			"time": 662,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Compare EntAdmin_id": true,
+				"Compare EntAdmin_email": true,
+				"Compare EntAdmin_pharmacy_id": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Compare EntAdmin_id": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Compare EntAdmin_email": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Compare EntAdmin_pharmacy_id": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				662
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Compare EntAdmin_id": true,
+					"Compare EntAdmin_email": true,
+					"Compare EntAdmin_pharmacy_id": true
+				}
+			]
+		},
+		{
+			"id": "df8fc0c0-a5ec-414f-befa-5a2c7bd8fb76",
+			"name": "User registration. Enterprise_manager",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/user/registration/type/enterprise_manager",
+			"time": 1216,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Created enterprise_manager": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Created enterprise_manager": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1216
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Created enterprise_manager": true
+				}
+			]
+		},
+		{
+			"id": "b2724fdb-b77e-4c1b-8e13-1a522e8d7dee",
+			"name": "Add EntMan to Pharmacy.",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/user/pharmacy/3/add-user/Isaiah.Collier@yahoo.com",
+			"time": 529,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				529
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "ec026c1b-b35c-4f5e-9391-181d67c773f8",
+			"name": "Retrieving collection of EnterpriseManager data.",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/user/enterprise-managers?page=1&per_page=20&order[id]=desc",
+			"time": 579,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Compare EntMan_id": true,
+				"Compare EntMan_email": true,
+				"Compare EntMan_pharmacy_id": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Compare EntMan_id": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Compare EntMan_email": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Compare EntMan_pharmacy_id": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				579
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Compare EntMan_id": true,
+					"Compare EntMan_email": true,
+					"Compare EntMan_pharmacy_id": true
+				}
+			]
+		},
+		{
+			"id": "b73cb20b-4e9a-46ed-a537-b9ed21fe1248",
+			"name": "Creating Order- delivery_adress",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/customer/order",
+			"time": 623,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"Status new": true,
+				"Sum order": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status new": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Sum order": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				623
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"Status new": true,
+					"Sum order": true
+				}
+			]
+		},
+		{
+			"id": "013df4eb-7596-45b8-b4e8-7a8bd7ab1d30",
+			"name": "Retrieving collection of orders. Copy",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/user/orders",
+			"time": 698,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Compare Order_id": true,
+				"Compare Order_sum": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Compare Order_id": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Compare Order_sum": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				698
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Compare Order_id": true,
+					"Compare Order_sum": true
+				}
+			]
+		},
+		{
+			"id": "951a56a8-1cd7-44ea-8131-753cb3ca27eb",
+			"name": "Creating Pharmacy.",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/user/pharmacy",
+			"time": 551,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true,
+				"isEnabled=true": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"isEnabled=true": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				551
+			],
+			"allTests": [
+				{
+					"Status code is 201": true,
+					"isEnabled=true": true
+				}
+			]
+		},
+		{
+			"id": "e0c2aef3-2f11-45ae-893c-5ad1e2c7dfb4",
+			"name": "Retrieving collection of Pharmacy",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/user/pharmacies",
+			"time": 679,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Compare pharma_id": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Compare pharma_id": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				679
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Compare pharma_id": true
+				}
+			]
+		},
+		{
+			"id": "4d5e6879-5709-44e3-be94-9d71d1e1367a",
+			"name": "Retrieving collection of Prototype products.",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/user/prototype-products",
+			"time": 4115,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				4115
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "54f878c6-58f6-499d-95c4-4ac2768b546d",
+			"name": "Retrieving collection of Customer data by phone",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/user/customers/search-by-name-or-phone?name_or_phone=11892771227",
+			"time": 547,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Compare id_customer": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Compare id_customer": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				547
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Compare id_customer": true
+				}
+			]
+		},
+		{
+			"id": "5363db8d-c184-404a-b36a-c034fdbd0670",
+			"name": "Retrieving collection of Customer data by name",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/user/customers/search-by-name-or-phone?name_or_phone=Aglae_Williamson22",
+			"time": 505,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Compare id_customer": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Compare id_customer": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				505
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Compare id_customer": true
+				}
+			]
+		},
+		{
+			"id": "2e64d44f-4aea-4d3c-b7f1-ae9c8d378a4a",
+			"name": "Retrieves collection of Region data.",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/public/regions",
+			"time": 464,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				464
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "aa03a63c-e4ed-4de6-b602-69c638ca6872",
+			"name": "Customer registration.",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/customer/registration",
+			"time": 1189,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1189
+			],
+			"allTests": [
+				{
+					"Status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "441930fe-8f58-40f6-9fee-1719b523e18d",
+			"name": "Customer authentication.",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/customer/auth",
+			"time": 1171,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1171
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "1fa07b51-29f0-47e9-a02c-8cde03794aa2",
+			"name": "Customer login. Phone",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/customer/login",
+			"time": 1228,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1228
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "f8404894-4266-4f24-9f81-97c8ea155187",
+			"name": "Retrieving self Customer data.",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/customer/customer",
+			"time": 470,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				470
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "d562b8d9-189a-42d0-82ff-a58b2e2c842f",
+			"name": "Uploading Customer image file. Copy",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/customer/image",
+			"time": 707,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				707
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "d6dc2736-9cd0-4381-8a1c-e1fdbc2f7862",
+			"name": "Updating Customer data.",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/customer/customer",
+			"time": 643,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				643
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "e3ed8931-0879-43fa-ad49-d14ed6abae06",
+			"name": "Retrieving Customer data by uuid.",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/customer/customer/c47651fc-59d9-4d45-850d-2061f8000bbe",
+			"time": 472,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				472
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "5d2de480-1854-442a-8c65-d1302ac7fb86",
+			"name": "Updating Customer region.",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/customer/customer/region",
+			"time": 566,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				566
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "cbfe320d-aee6-4e47-a18d-8e2ffbd47368",
+			"name": "Retrieving self Customer data. Copy",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/customer/customer",
+			"time": 670,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Compare uuid avatar": true,
+				"Compare uuid customer": true,
+				"Compare phone customer": true,
+				"Compare region": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Compare uuid avatar": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Compare uuid customer": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Compare phone customer": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Compare region": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				670
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Compare uuid avatar": true,
+					"Compare uuid customer": true,
+					"Compare phone customer": true,
+					"Compare region": true
+				}
+			]
+		},
+		{
+			"id": "92ed6daf-9e0f-4271-893b-eccb55e2d84a",
+			"name": "Customer logout.",
+			"url": "https://api.pharmacies.release.fmc-dev.com/api/v1/customer/logout",
+			"time": 507,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				507
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 66119,
+	"collection": {
+		"requests": [
+			{
+				"id": "d691348f-bddd-470c-9105-9b00e121b822",
+				"method": "POST"
+			},
+			{
+				"id": "41ec0380-3e6d-41db-8754-275303691bee",
+				"method": "POST"
+			},
+			{
+				"id": "d09fdf84-07db-4cc5-8bc1-2549cff1ea9f",
+				"method": "GET"
+			},
+			{
+				"id": "c8baac3d-d3a4-4f0f-b7d8-c22be99a4709",
+				"method": "POST"
+			},
+			{
+				"id": "d50f4873-2d0c-4041-9ecf-486ddabdb7f8",
+				"method": "PUT"
+			},
+			{
+				"id": "1efd3580-c676-4c68-afe0-4ee19ee0f072",
+				"method": "GET"
+			},
+			{
+				"id": "bbbd5e2c-f301-4b33-af44-f5f9287420fa",
+				"method": "GET"
+			},
+			{
+				"id": "dee8b7d8-355e-4618-8d3e-abaae5ee6ca7",
+				"method": "POST"
+			},
+			{
+				"id": "cfb4b468-c78f-4aa3-a793-9ac9be2b4079",
+				"method": "PATCH"
+			},
+			{
+				"id": "99500f07-c9c0-4d8b-b776-588b54d219ed",
+				"method": "GET"
+			},
+			{
+				"id": "564e053d-cf53-425a-ae27-ee14e9f25280",
+				"method": "PATCH"
+			},
+			{
+				"id": "4c5544df-bf1b-4645-9830-d0d078fb8005",
+				"method": "GET"
+			},
+			{
+				"id": "77d95d9a-934b-47b8-8919-399dd0a2cf09",
+				"method": "POST"
+			},
+			{
+				"id": "80d7b688-2cb4-4bd4-942a-0d81fc7c8875",
+				"method": "GET"
+			},
+			{
+				"id": "a0f4549b-8d2b-49ff-9f11-2ae9f983153f",
+				"method": "PATCH"
+			},
+			{
+				"id": "6a13428e-cf37-421c-aff0-6b059b5407f6",
+				"method": "GET"
+			},
+			{
+				"id": "8f63a51c-5667-447d-a0fe-438cba8dea3a",
+				"method": "PATCH"
+			},
+			{
+				"id": "8e514e7b-f910-4cd2-bf85-3212dc4a9d4e",
+				"method": "GET"
+			},
+			{
+				"id": "ef825fd3-d35d-4d84-a498-b7ba48f5ad34",
+				"method": "GET"
+			},
+			{
+				"id": "152690d0-810d-432a-ab6d-c5ac7bc0cf2a",
+				"method": "POST"
+			},
+			{
+				"id": "2d52ecc1-ab6d-4b15-8da3-77e57627134f",
+				"method": "POST"
+			},
+			{
+				"id": "a32b5242-a252-4c9c-a724-b79b6ff4b255",
+				"method": "POST"
+			},
+			{
+				"id": "02d041c3-ebe0-4f0e-bc30-6f4d3060c231",
+				"method": "POST"
+			},
+			{
+				"id": "87e912a7-c612-4911-9cdd-cb764e514757",
+				"method": "PUT"
+			},
+			{
+				"id": "8b935fe4-7f28-4502-930f-4e83d65c2c0d",
+				"method": "POST"
+			},
+			{
+				"id": "ec98f00e-41ae-4842-a81f-ba777108b9ac",
+				"method": "GET"
+			},
+			{
+				"id": "ee684448-12db-47c2-9856-7f7ede71dbf3",
+				"method": "GET"
+			},
+			{
+				"id": "0f0609ea-cbbb-4908-a4ac-42d2b0520fcc",
+				"method": "POST"
+			},
+			{
+				"id": "04654b68-7357-49c7-a004-ade8cfa4032b",
+				"method": "POST"
+			},
+			{
+				"id": "761b93db-896a-4049-a53d-9d00b1b03990",
+				"method": "POST"
+			},
+			{
+				"id": "8b5b7425-632d-439d-af1c-3fb3c4c7dcb1",
+				"method": "POST"
+			},
+			{
+				"id": "f1e9c808-b8c4-4c67-bf76-b8da1014e05d",
+				"method": "PUT"
+			},
+			{
+				"id": "c76cafcb-b010-4c93-b5f5-a3baa2eeda9d",
+				"method": "POST"
+			},
+			{
+				"id": "0871138b-56c3-4861-8508-935516ce84a6",
+				"method": "GET"
+			},
+			{
+				"id": "8e0f6f6c-17e6-49b6-a2e9-375cb715f24f",
+				"method": "GET"
+			},
+			{
+				"id": "b9535d5c-6a89-43f2-a8d5-83107117dad7",
+				"method": "GET"
+			},
+			{
+				"id": "73fcc7ac-caca-49e6-b74d-695cc3d7e3d1",
+				"method": "GET"
+			},
+			{
+				"id": "8a23181d-9378-4eee-95c2-994c25334c23",
+				"method": "POST"
+			},
+			{
+				"id": "96eb9106-3201-4bbf-9769-b55664494af8",
+				"method": "GET"
+			},
+			{
+				"id": "2684050a-c9e3-466a-8673-200bc18102f5",
+				"method": "POST"
+			},
+			{
+				"id": "aac54637-f5a4-4222-8827-b3e4b9450129",
+				"method": "GET"
+			},
+			{
+				"id": "0e04b819-6eb7-4a90-a3f6-17f5fe8a16f6",
+				"method": "GET"
+			},
+			{
+				"id": "4d87acc7-2108-47bd-a80c-cc744bb84ab9",
+				"method": "POST"
+			},
+			{
+				"id": "0596b131-1f58-4e3a-8a94-8175735655b3",
+				"method": "GET"
+			},
+			{
+				"id": "b4b8d1ec-73d8-4a67-9f0d-83b4a553a356",
+				"method": "POST"
+			},
+			{
+				"id": "5eb22feb-9c4e-4cdf-a25a-4ef2cf209aa2",
+				"method": "PATCH"
+			},
+			{
+				"id": "62a55595-2c63-4432-9d5b-2b274881f062",
+				"method": "GET"
+			},
+			{
+				"id": "df8fc0c0-a5ec-414f-befa-5a2c7bd8fb76",
+				"method": "POST"
+			},
+			{
+				"id": "b2724fdb-b77e-4c1b-8e13-1a522e8d7dee",
+				"method": "PATCH"
+			},
+			{
+				"id": "ec026c1b-b35c-4f5e-9391-181d67c773f8",
+				"method": "GET"
+			},
+			{
+				"id": "b73cb20b-4e9a-46ed-a537-b9ed21fe1248",
+				"method": "POST"
+			},
+			{
+				"id": "013df4eb-7596-45b8-b4e8-7a8bd7ab1d30",
+				"method": "GET"
+			},
+			{
+				"id": "951a56a8-1cd7-44ea-8131-753cb3ca27eb",
+				"method": "POST"
+			},
+			{
+				"id": "e0c2aef3-2f11-45ae-893c-5ad1e2c7dfb4",
+				"method": "GET"
+			},
+			{
+				"id": "4d5e6879-5709-44e3-be94-9d71d1e1367a",
+				"method": "GET"
+			},
+			{
+				"id": "54f878c6-58f6-499d-95c4-4ac2768b546d",
+				"method": "GET"
+			},
+			{
+				"id": "5363db8d-c184-404a-b36a-c034fdbd0670",
+				"method": "GET"
+			},
+			{
+				"id": "2e64d44f-4aea-4d3c-b7f1-ae9c8d378a4a",
+				"method": "GET"
+			},
+			{
+				"id": "aa03a63c-e4ed-4de6-b602-69c638ca6872",
+				"method": "POST"
+			},
+			{
+				"id": "441930fe-8f58-40f6-9fee-1719b523e18d",
+				"method": "POST"
+			},
+			{
+				"id": "1fa07b51-29f0-47e9-a02c-8cde03794aa2",
+				"method": "POST"
+			},
+			{
+				"id": "f8404894-4266-4f24-9f81-97c8ea155187",
+				"method": "GET"
+			},
+			{
+				"id": "d562b8d9-189a-42d0-82ff-a58b2e2c842f",
+				"method": "POST"
+			},
+			{
+				"id": "d6dc2736-9cd0-4381-8a1c-e1fdbc2f7862",
+				"method": "PUT"
+			},
+			{
+				"id": "e3ed8931-0879-43fa-ad49-d14ed6abae06",
+				"method": "GET"
+			},
+			{
+				"id": "5d2de480-1854-442a-8c65-d1302ac7fb86",
+				"method": "PATCH"
+			},
+			{
+				"id": "cbfe320d-aee6-4e47-a18d-8e2ffbd47368",
+				"method": "GET"
+			},
+			{
+				"id": "92ed6daf-9e0f-4271-893b-eccb55e2d84a",
+				"method": "POST"
+			}
+		]
+	}
+}

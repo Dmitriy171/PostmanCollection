@@ -1,0 +1,29 @@
+jenpostbot
+@JenPost_bot
+Use this token to access the HTTP API:
+1473587327:AAEM89M12Qk-GVfbIXvvLO-Fuhi30_BvMzw
+bot1473587327:AAEM89M12Qk-GVfbIXvvLO-Fuhi30_BvMzw
+
+Получение id канала
+https://api.telegram.org/bot1473587327:AAEM89M12Qk-GVfbIXvvLO-Fuhi30_BvMzw/sendMessage?chat_id=@Test17171717&text=Test
+
+{
+  "ok": true,
+  "result": {
+    "message_id": 13,
+    "sender_chat": {
+      "id": -1001205031722,
+      "title": "Test",
+      "username": "Test17171717",
+      "type": "channel"
+    },
+    "chat": {
+      "id": -1001205031722,
+      "title": "Test",
+      "username": "Test17171717",
+      "type": "channel"
+    },
+    "date": 1607543166,
+    "text": "Test"
+  }
+}
